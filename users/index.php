@@ -1,7 +1,7 @@
 <?php
 
 session_start();//initializs session to store and retrive user info
-error_reporting(0);//disable error reporting on screen for securitg
+error_reporting(0);//disable error reporting on screen for security
 
 //Include the configuration file
 include("includes/config.php");
@@ -10,14 +10,14 @@ include("includes/config.php");
 if(isset($_POST['submit']))
 {
 
-	//Retrieve the user details from the database based on the entered email and password
+//Retrieve the user details from the database based on the entered email and password
 $ret=mysqli_query($bd, "SELECT * FROM users WHERE userEmail='".$_POST['username']."' and password='".md5($_POST['password'])."'");
 $num=mysqli_fetch_array($ret);
 
 
 if($num>0)
 {
-	//if the user is found in the database, set session variables and log the user in
+//if the user is found in the database, set session variables and log the user in
 $extra="change-password.php";//
 $_SESSION['login']=$_POST['username'];
 $_SESSION['id']=$num['id'];
@@ -35,10 +35,9 @@ exit();
 
 }
 
-
 else
 {
-	//If the user is not found in the database , log the failed login attempt and display an error message
+//If the user is not found in the database , log the failed login attempt and display an error message
 $_SESSION['login']=$_POST['username'];	
 $uip=$_SERVER['REMOTE_ADDR'];
 $status=0;
@@ -53,27 +52,26 @@ $extra="login.php";
 //Check if the password change form is submitted
 if(isset($_POST['change']))
 {
-   $email=$_POST['email'];
-    $contact=$_POST['contact'];
-    $password=md5($_POST['password']);
+$email=$_POST['email'];
+$contact=$_POST['contact'];
+$password=md5($_POST['password']);
 
-	//Check if the email and contact number are valid in the database
+//Check if the email and contact number are valid in the database
 $query=mysqli_query($bd, "SELECT * FROM users WHERE userEmail='$email' and contactNo='$contact'");
 $num=mysqli_fetch_array($query);
 
 
 if($num>0)
 {
-	//If the email and contact number are valid, update the user's password
+//If the email and contact number are valid, update the user's password
 mysqli_query($bd, "update users set password='$password' WHERE userEmail='$email' and contactNo='$contact' ");
 $msg="Password Changed Successfully";
 
 }
 
-
 else
 {
-	//If the email and contact number are not valid, display an error message
+//If the email and contact number are not valid, display an error message
 $errormsg="Invalid email id or Contact no";
 
 }
