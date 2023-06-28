@@ -1,5 +1,5 @@
 <aside>
-    <div id="sidebar"  class="nav-collapse ">
+    <div id="sidebar"  class="nav-collapse " style="background:#8C52FF;color:#fff;">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
             <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
@@ -11,7 +11,7 @@
             <h5 class="centered"><?php echo htmlentities($row['fullName']);?></h5>
             <?php } ?>
             <li class="mt">
-                <a href="dashboard.php">
+                <a href="dashboard.php" style="color:#fff;">
                     <i class="fa fa-dashboard"></i>
                     <span>Dashboard</span>
                 </a>
