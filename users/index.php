@@ -31,8 +31,6 @@ $extra="login.php";
 }
 }
 
-
-
 if(isset($_POST['change']))
 {
    $email=$_POST['email'];
@@ -60,7 +58,6 @@ $errormsg="Invalid email id or Contact no";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Dashboard">
-    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
     <title>AKAR CMS | User Login</title>
 
@@ -84,41 +81,38 @@ return false;
 return true;
 }
 </script>
-  </head>
+</head>
 
-  <body>
+<body>
 
-      <!-- **********************************************************************************************************************************************************
-      MAIN CONTENT
-      *********************************************************************************************************************************************************** -->
+	<!-- **********************************************************************************************************************************************************
+	MAIN CONTENT
+	*********************************************************************************************************************************************************** -->
 
-	  <div id="login-page">
-	  	<div class="container">
-	  	
-		      <form class="form-login" name="login" method="post">
-		        <h2 class="form-login-heading" style="background-color:#8C52FF" >sign in now</h2>
+	<div id="login-page">
+		<div class="container">
+	  		<form class="form-login" name="login" method="post">
+		    	<h2 class="form-login-heading" style="background-color:#8C52FF" >sign in now</h2>
 		        <p style="padding-left:4%; padding-top:2%;  color:red">
-		        	<?php if($errormsg){
-echo htmlentities($errormsg);
-		        		}?></p>
-
-		        		<p style="padding-left:4%; padding-top:2%;  color:green">
-		        	<?php if($msg){
-echo htmlentities($msg);
-		        		}?></p>
+		        <?php if($errormsg){
+				echo htmlentities($errormsg);
+		        }?></p>
+				<p style="padding-left:4%; padding-top:2%;  color:green">
+		        <?php if($msg){
+				echo htmlentities($msg);
+		        }?></p>
 		        <div class="login-wrap">
-		            <input type="text" class="form-control" name="username" placeholder="Email"  required autofocus>
+		        	<input type="text" class="form-control" name="username" placeholder="Email"  required autofocus>
 		            <br>
 		            <input type="password" class="form-control" name="password" required placeholder="Password">
 		            <label class="checkbox">
 		                <span class="pull-right">
 		                    <a data-toggle="modal" href="login.html#myModal"> Forgot Password?</a>
-		
 		                </span>
 		            </label>
 		            <button class="btn btn-theme btn-block" name="submit" type="submit" style="background-color:#CB6CE6"><i class="fa fa-lock"></i> SIGN IN</button>
 		            <hr>
-		           </form>
+		    		</form>
 		            <div class="registration">
 		                Don't have an account yet?<br/>
 		                <a class="" href="registration.php">
@@ -129,37 +123,32 @@ echo htmlentities($msg);
 		        </div>
 		
 		          <!-- Modal -->
-		           <form class="form-login" name="forgot" method="post">
-		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
-		              <div class="modal-dialog">
-		                  <div class="modal-content">
-		                      <div class="modal-header">
-		                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		                          <h4 class="modal-title">Forgot Password ?</h4>
-		                      </div>
-		                      <div class="modal-body">
-		                          <p>Enter your details below to reset your password.</p>
-									<input type="email" name="email" placeholder="Email" autocomplete="off" class="form-control" required><br >
-									<input type="text" name="contact" placeholder="contact No" autocomplete="off" class="form-control" required><br>
-									<input type="password" class="form-control" placeholder="New Password" id="password" name="password"  required ><br />
-									<input type="password" class="form-control unicase-form-control text-input" placeholder="Confirm Password" id="confirmpassword" name="confirmpassword" required >
-
-		
-		                      </div>
-		                      <div class="modal-footer">
-		                          <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
-		                          <button class="btn btn-theme" type="submit" name="change" onclick="return valid();">Submit</button>
-		                      </div>
-		                  </div>
-		              </div>
-		          </div>
+		        <form class="form-login" name="forgot" method="post">
+		        	<div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+		            	<div class="modal-dialog">
+		                	<div class="modal-content">
+		                    	<div class="modal-header">
+		                        	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                          	<h4 class="modal-title">Forgot Password ?</h4>
+		                      	</div>
+								<div class="modal-body">
+									<p>Enter your details below to reset your password.</p>
+										<input type="email" name="email" placeholder="Email" autocomplete="off" class="form-control" required><br >
+										<input type="text" name="contact" placeholder="contact No" autocomplete="off" class="form-control" required><br>
+										<input type="password" class="form-control" placeholder="New Password" id="password" name="password"  required ><br />
+										<input type="password" class="form-control unicase-form-control text-input" placeholder="Confirm Password" id="confirmpassword" name="confirmpassword" required >
+								</div>
+								<div class="modal-footer">
+									<button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
+									<button class="btn btn-theme" type="submit" name="change" onclick="return valid();">Submit</button>
+								</div>
+		                  	</div>
+		             	</div>
+		          	</div>
 		          <!-- modal -->
-		          </form>
-		
-		      	  	
-	  	
-	  	</div>
-	  </div>
+		        </form>
+		</div>
+	</div>
 
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
