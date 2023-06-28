@@ -16,7 +16,7 @@ else{ ?>
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>CMS | Dashboard</title>
+    <title>AKAR CMS | Dashboard</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -105,12 +105,7 @@ $num1 = mysqli_num_rows($rt);
                   	
                   	
                   	</div><!-- /row mt -->	
-                  
-                      
-                     
-                    				
-				
-				
+                  	
           </section>
       </section>
 <?php include("includes/footer.php");?>

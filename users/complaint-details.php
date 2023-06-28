@@ -16,7 +16,7 @@ else{ ?>
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>CMS | Complaint Details</title>
+    <title>AKAR CMS | Complaint Details</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -147,7 +147,7 @@ echo "Not Process yet";
 
 
 <?php } ?>
-		</section><! --/wrapper -->
+		</section><!--/wrapper -->
       </section><!-- /MAIN CONTENT -->
 <?php include('includes/footer.php');?>
   </section>

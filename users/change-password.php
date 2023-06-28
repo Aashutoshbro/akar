@@ -36,7 +36,7 @@ $errormsg="Old Password not match !!";
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>CMS | User Change Password</title>
+    <title> AKAR CMS | User Change Password</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -78,74 +78,72 @@ return true;
 </script>
   </head>
 
-  <body>
+<body>
 
-  <section id="container" >
-     <?php include("includes/header.php");?>
-      <?php include("includes/sidebar.php");?>
-      <section id="main-content">
-          <section class="wrapper">
-          	<h3><i class="fa fa-angle-right"></i> Change Password</h3>
+<section id="container" >
+  <?php include("includes/header.php");?>
+  <?php include("includes/sidebar.php");?>
+  <section id="main-content">
+    <section class="wrapper">
+      <h3><i class="fa fa-angle-right"></i> Change Password</h3>
           	
-          	<!-- BASIC FORM ELELEMNTS -->
-          	<div class="row mt">
-          		<div class="col-lg-12">
-                  <div class="form-panel">
-                  	  <h4 class="mb"><i class="fa fa-angle-right"></i> User Change Password</h4>
+      <!-- BASIC FORM ELELEMNTS -->
+      <div class="row mt">
+        <div class="col-lg-12">
+          <div class="form-panel">
+            <h4 class="mb"><i class="fa fa-angle-right"></i> User Change Password</h4>
+              <?php if($successmsg)
+              {?>
+                <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <b>Well done!</b> <?php echo htmlentities($successmsg);?></div>
+              <?php }?>
 
-                      <?php if($successmsg)
-                      {?>
-                      <div class="alert alert-success alert-dismissable">
-                       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                      <b>Well done!</b> <?php echo htmlentities($successmsg);?></div>
-                      <?php }?>
+              <?php if($errormsg)
+              {?>
+              <div class="alert alert-danger alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <b>Oh snap!</b> </b> <?php echo htmlentities($errormsg);?></div>
+                <?php }?>
+                <form class="form-horizontal style-form" method="post" name="chngpwd" onSubmit="return valid();">
+                  <div class="form-group">
+                    <label class="col-sm-2 col-sm-2 control-label">Current Password</label>
+                    <div class="col-sm-10">
+                      <input type="password" name="password" required="required" class="form-control">
+                    </div>
+                  </div>
 
-   <?php if($errormsg)
-                      {?>
-                      <div class="alert alert-danger alert-dismissable">
- <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                      <b>Oh snap!</b> </b> <?php echo htmlentities($errormsg);?></div>
-                      <?php }?>
+                  <div class="form-group">
+                    <label class="col-sm-2 col-sm-2 control-label">New Password</label>
+                    <div class="col-sm-10">
+                      <input type="password" name="newpassword" required="required" class="form-control">
+                    </div>
+                  </div>
 
+                  <div class="form-group">
+                    <label class="col-sm-2 col-sm-2 control-label">Confirm Password</label>
+                    <div class="col-sm-10">
+                      <input type="password" name="confirmpassword" required="required" class="form-control">
+                    </div>
+                  </div>
+                
+                  <div class="form-group">
+                    <div class="col-sm-10" style="padding-left:25% ">
+                      <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </div>
 
-                      <form class="form-horizontal style-form" method="post" name="chngpwd" onSubmit="return valid();">
-                          <div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Current Password</label>
-                              <div class="col-sm-10">
-                                  <input type="password" name="password" required="required" class="form-control">
-                              </div>
-                          </div>
-
-<div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">New Password</label>
-                              <div class="col-sm-10">
-                                  <input type="password" name="newpassword" required="required" class="form-control">
-                              </div>
-                          </div>
-
-<div class="form-group">
-                              <label class="col-sm-2 col-sm-2 control-label">Confirm Password</label>
-                              <div class="col-sm-10">
-                                  <input type="password" name="confirmpassword" required="required" class="form-control">
-                              </div>
-                          </div>
-                          <div class="form-group">
-                           <div class="col-sm-10" style="padding-left:25% ">
-<button type="submit" name="submit" class="btn btn-primary">Submit</button>
-</div>
-</div>
-
-                          </form>
-                          </div>
-                          </div>
-                          </div>
+                </form>
+              </div>
+          </div>
+        </div>
                           
           	
           	
-		</section><! --/wrapper -->
-      </section><!-- /MAIN CONTENT -->
+		</section><!--/wrapper -->
+    </section><!-- /MAIN CONTENT -->
     <?php include("includes/footer.php");?>
-  </section>
+</section>
 
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
@@ -174,8 +172,6 @@ return true;
 	<script type="text/javascript" src="assets/js/bootstrap-daterangepicker/daterangepicker.js"></script>
 	
 	<script type="text/javascript" src="assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
-	
-	
 	<script src="assets/js/form-component.js"></script>    
     
     

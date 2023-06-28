@@ -62,7 +62,7 @@ $errormsg="Invalid email id or Contact no";
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>CMS | User Login</title>
+    <title>AKAR CMS | User Login</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -139,10 +139,10 @@ echo htmlentities($msg);
 		                      </div>
 		                      <div class="modal-body">
 		                          <p>Enter your details below to reset your password.</p>
-<input type="email" name="email" placeholder="Email" autocomplete="off" class="form-control" required><br >
-<input type="text" name="contact" placeholder="contact No" autocomplete="off" class="form-control" required><br>
- <input type="password" class="form-control" placeholder="New Password" id="password" name="password"  required ><br />
-<input type="password" class="form-control unicase-form-control text-input" placeholder="Confirm Password" id="confirmpassword" name="confirmpassword" required >
+									<input type="email" name="email" placeholder="Email" autocomplete="off" class="form-control" required><br >
+									<input type="text" name="contact" placeholder="contact No" autocomplete="off" class="form-control" required><br>
+									<input type="password" class="form-control" placeholder="New Password" id="password" name="password"  required ><br />
+									<input type="password" class="form-control unicase-form-control text-input" placeholder="Confirm Password" id="confirmpassword" name="confirmpassword" required >
 
 		
 		                      </div>

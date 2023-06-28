@@ -17,7 +17,7 @@ else{
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>CMS | Complaint History</title>
+    <title>AKAR CMS | Complaint History</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -101,7 +101,7 @@ if($status=="closed") {
 		  	
 		  	
 
-		</section><! --/wrapper -->
+		</section><!--/wrapper -->
       </section><!-- /MAIN CONTENT -->
 <?php include("includes/footer.php");?>
   </section>

@@ -43,7 +43,7 @@ echo '<script> alert("Your complain has been successfully filled and your compla
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>CMS | User Register Complaint</title>
+    <title>AKAR CMS | User Register Complaint</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -176,23 +176,22 @@ while ($rw=mysqli_fetch_array($sql)) {
 
 
 
-                          <div class="form-group">
-                           <div class="col-sm-10" style="padding-left:25% ">
+<div class="form-group">
+<div class="col-sm-10" style="padding-left:25% ">
 <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 </div>
 </div>
 
-                          </form>
-                          </div>
-                          </div>
-                          </div>
-                          
+</form>
+</div>
+</div>
+</div>
           	
           	
-		</section>
-      </section>
-    <?php include("includes/footer.php");?>
-  </section>
+</section>
+</section>
+<?php include("includes/footer.php");?>
+</section>
 
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
