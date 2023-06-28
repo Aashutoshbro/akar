@@ -18,7 +18,7 @@
             </li>
 
             <li class="sub-menu">
-                <a href="javascript:;" >
+                <a href="javascript:;"  style="color:#fff;" >
                     <i class="fa fa-cogs"></i>
                     <span>Account Setting</span>
                 </a>
@@ -29,7 +29,7 @@
             </li>
 
             <li class="sub-menu">
-                <a href="register-complaint.php" >
+                <a href="register-complaint.php" style="color:#fff;" >
                     <i class="fa fa-book"></i>
                     <span>Lodge Complaint</span>
                 </a>
@@ -38,7 +38,7 @@
             </li>
             
             <li class="sub-menu">
-                <a href="complaint-history.php" >
+                <a href="complaint-history.php" style="color:#fff;" >
                     <i class="fa fa-tasks"></i>
                     <span>Complaint History</span>
                 </a>

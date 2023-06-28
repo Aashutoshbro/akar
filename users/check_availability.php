@@ -2,17 +2,16 @@
 require_once("includes/config.php");
 if(!empty($_POST["email"])) {
 	$email= $_POST["email"];
-	
-		$result =mysqli_query($bd, "SELECT userEmail FROM users WHERE userEmail='$email'");
-		$count=mysqli_num_rows($result);
+	$result =mysqli_query($bd, "SELECT userEmail FROM users WHERE userEmail='$email'");
+	$count=mysqli_num_rows($result);
 if($count>0)
 {
 echo "<span style='color:red'> Email already exists .</span>";
- echo "<script>$('#submit').prop('disabled',true);</script>";
+echo "<script>$('#submit').prop('disabled',true);</script>";
 } else{
 	
-	echo "<span style='color:green'> Email available for Registration .</span>";
- echo "<script>$('#submit').prop('disabled',false);</script>";
+echo "<span style='color:green'> Email available for Registration .</span>";
+echo "<script>$('#submit').prop('disabled',false);</script>";
 }
 }
 
