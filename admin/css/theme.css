@@ -160,6 +160,7 @@ body [class^="icon-"], body [class*=" icon-"] {
 .clear {
 	clear: both
 }
+
 .none {
 	display: none
 }
@@ -183,7 +184,8 @@ body [class^="icon-"], body [class*=" icon-"] {
 }
 .navbar {
 	position: static!important;
-	margin: 0!important
+	margin: 0!important;
+	
 }
 .navbar .navbar-inner {
 	background: #fff;
