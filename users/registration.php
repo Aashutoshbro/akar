@@ -64,7 +64,7 @@ if(isset($_POST['submit']))
 		            <input type="text" class="form-control" maxlength="10" name="contactno" placeholder="Contact no" required="required" autofocus>
 		            <br>
 		            
-		            <button class="btn btn-theme btn-block"  type="submit" name="submit" id="submit" style="background-color:#CB6CE6"><i class="fa fa-user"></i> Register</button>
+		            <button class="btn btn-theme btn-block"  type="submit" name="submit" id="submit" style="background-color:#8C52FF"><i class="fa fa-user"></i> Register</button>
 		            <hr>
 		            
 		            <div class="registration">
