@@ -23,8 +23,8 @@
                     <span>Account Setting</span>
                 </a>
                 <ul class="sub">
-                    <li style="background-color:#a952ff;border-bottom:1px solid gold;"><a  href="profile.php" style="font-size:14px;font-weight:bold;color:#fff;">Profile</a></li>
-                    <li style="background-color:#a952ff;"><a  href="change-password.php" style="font-size:14px;font-weight:bold;color:#fff;">Change Password</a></li>
+                    <li style="background-color:#ff2b2b80;border-bottom:1px solid gold;"><a  href="profile.php" style="font-size:14px;font-weight:bold;color:#fff;">Profile</a></li>
+                    <li style="background-color:#ff2b2b80;"><a  href="change-password.php" style="font-size:14px;font-weight:bold;color:#fff;">Change Password</a></li>
                 </ul>
             </li>
 
