@@ -16,16 +16,15 @@ if(isset($_POST['submit']))
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="Dashboard">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AKAR</title>
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
+	
 	<script>
 		function userAvailability() {
 		$("#loaderIcon").show();

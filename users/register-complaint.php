@@ -39,8 +39,6 @@ echo '<script> alert("Your complain has been successfully filled and your compla
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="Dashboard">
 
     <title>AKAR CMS | User Register Complaint</title>
 
@@ -178,7 +176,11 @@ echo '<script> alert("Your complain has been successfully filled and your compla
               
       </section>
     </section>
+
+    <!-- This will help to include footer.php from include part -->
+
     <?php include("includes/footer.php");?>
+  
   </section>
 
     <!-- js placed at the end of the document so the pages load faster -->
