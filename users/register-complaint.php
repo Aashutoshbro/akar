@@ -139,6 +139,7 @@ echo '<script> alert("Your complain has been successfully filled and your compla
                       ?>
                     </select>
                   </div>
+                  
                 </div>
 
 
@@ -147,7 +148,23 @@ echo '<script> alert("Your complain has been successfully filled and your compla
                   <div class="col-sm-4">
                     <input type="text" name="noc" required="required" value="" required="" class="form-control">
                   </div>
+
+                  <!-- <label class="col-sm-2 col-sm-2 control-label">State</label>
+                  <div class="col-sm-4">
+                    <select name="state" required="required" class="form-control">
+                      <option value="">Select State</option>
+                      <?php $sql=mysqli_query($bd, "select stateName from state ");
+                      while ($rw=mysqli_fetch_array($sql)) {
+                        ?>
+                      <option value="<?php echo htmlentities($rw['stateName']);?>"><?php echo htmlentities($rw['stateName']);?></option>
+                      <?php
+                      }
+                      ?>
+                    </select>
+                  </div> -->
+
                 </div>
+                
 
                 <div class="form-group">
                   <label class="col-sm-2 col-sm-2 control-label">Complaint Details (max 2000 words) </label>
