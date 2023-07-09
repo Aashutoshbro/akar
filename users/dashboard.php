@@ -47,11 +47,19 @@ else{ ?>
       <section class="wrapper">
         <div class="row">
           <div class="col-lg-9 main-chart">
+
+            <!-- added 2 div to make it looks good while being responsive -->
             <div class="col-md-2 col-sm-2 box0">
               <div>
               </div>
             </div>
             <div class="col-md-2 col-sm-2 box0">
+              <div>
+              </div>
+            </div>
+            <!-- ..................................................................... -->
+            
+            <div class="col-md-2 col-sm-2 box0" style="border:2px solid red;border-radius:16px;background:">
               <div class="box1">
 					  	  <span class="li_news"></span>
                 <?php 
