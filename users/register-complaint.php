@@ -79,7 +79,7 @@ echo '<script> alert("Your complain has been successfully filled and your compla
         <!-- BASIC FORM ELELEMNTS -->
         <div class="row mt">
           <div class="col-lg-12">
-            <div class="form-panel">
+            <div class="form-panel" style="border:3px solid orange;border-radius:10px;">
               <?php if($successmsg)
               {?>
                 <div class="alert alert-success alert-dismissable">
@@ -94,7 +94,7 @@ echo '<script> alert("Your complain has been successfully filled and your compla
                 <b>Oh snap!</b> </b> <?php echo htmlentities($errormsg);?>
               </div>
               <?php }?>
-              <form class="form-horizontal style-form" method="post" name="complaint" enctype="multipart/form-data" style="margin:30px;" >
+              <form class="form-horizontal style-form" method="post" name="complaint" enctype="multipart/form-data" style="font-size:14px;margin:30px;" >
                 <div class="form-group">
                   <label class="col-sm-2 col-sm-2 control-label">Category</label>
                   <div class="col-sm-4">
@@ -180,9 +180,9 @@ echo '<script> alert("Your complain has been successfully filled and your compla
                   </div>
                 </div>
 
-                <div class="form-group">
-                  <div class="col-sm-10" style="padding-left:25% ">
-                    <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                <div class="form-group centered">
+                  <div class="col-sm-10" style="padding-left:18% ">
+                    <button type="submit" name="submit" class="btn btn-primary" style="font-weight:bold;font-size:14px;width:160px;height:50px;">Submit</button>
                   </div>
                 </div>
               </form>
