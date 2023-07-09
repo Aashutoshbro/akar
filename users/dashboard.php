@@ -46,7 +46,9 @@ else{ ?>
     <section id="main-content">
       <section class="wrapper">
         <div class="row">
-          <div class="col-lg-9 main-chart">
+          <div class="col-lg-9 main-chart" style="margin:50px 0 40px 0;">
+
+            <h3 class="centered" style="margin-bottom:30px;">Complaint Status Overview</h3>
 
             <!-- added 2 div to make it looks good while being responsive -->
             <div class="col-md-2 col-sm-2 box0">
@@ -59,7 +61,7 @@ else{ ?>
             </div>
             <!-- ..................................................................... -->
             
-            <div class="col-md-2 col-sm-2 box0" style="border:2px solid red;border-radius:16px;background:">
+            <div class="col-md-2 col-sm-2 box0" style="border:3px solid orange;border-radius:16px;margin:10px;">
               <div class="box1">
 					  	  <span class="li_news"></span>
                 <?php 
@@ -73,7 +75,7 @@ else{ ?>
               <p><?php echo htmlentities($num1);?> Complaints not Process yet</p>
             </div>
             <?php }?>
-            <div class="col-md-2 col-sm-2 box0">
+            <div class="col-md-2 col-sm-2 box0" style="border:3px solid orange;border-radius:16px;margin:10px;">
               <div class="box1">
                 <span class="li_news"></span>
                 <?php 
@@ -86,7 +88,7 @@ else{ ?>
               <p><?php echo htmlentities($num1);?> Complaints Status in process</p>
             </div>
             <?php }?>
-            <div class="col-md-2 col-sm-2 box0">
+            <div class="col-md-2 col-sm-2 box0" style="border:3px solid orange;border-radius:16px;margin:10px;">
               <div class="box1">
                 <span class="li_news"></span>
                 <?php 
