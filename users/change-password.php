@@ -84,13 +84,13 @@ return true;
   <?php include("includes/sidebar.php");?>
   <section id="main-content">
     <section class="wrapper">
-      <h3><i class="fa fa-angle-right"></i>  &nbsp Change Password</h3>
+      <h3 class="centered">Change Password</h3>
           	
       <!-- BASIC FORM ELELEMNTS -->
       <div class="row mt">
         <div class="col-lg-12">
-          <div class="form-panel">
-            <h4 class="mb"><i class="fa fa-angle-right"></i> &nbsp  User Change Password</h4>
+          <div class="form-panel" style="border:3px solid orange;border-radius:10px;">
+            <h4 class="mb" style="margin:40px 0 30px 0;"> &nbspUser Change Password</h4>
               <?php if($successmsg)
               {?>
                 <div class="alert alert-success alert-dismissable">
@@ -104,7 +104,7 @@ return true;
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                 <b>Oh snap!</b> </b> <?php echo htmlentities($errormsg);?></div>
                 <?php }?>
-                <form class="form-horizontal style-form" method="post" name="chngpwd" onSubmit="return valid();">
+                <form class="form-horizontal style-form" method="post" name="chngpwd" onSubmit="return valid();"  style="font-size:15px;">
                   <div class="form-group">
                     <label class="col-sm-2 col-sm-2 control-label"> &nbsp Current Password</label>
                     <div class="col-sm-10">
@@ -127,8 +127,8 @@ return true;
                   </div>
                 
                   <div class="form-group">
-                    <div class="col-sm-10" style="padding-left:25% ">
-                      <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                    <div class="col-sm-10" style="padding-left:2%;">
+                      <button type="submit" name="submit" class="btn btn-primary" style="margin-top:10px;font-weight:bold;font-size:14px;width:160px;height:50px;">Submit</button>
                     </div>
                   </div>
 
@@ -140,8 +140,10 @@ return true;
           	
           	
 		</section><!--/wrapper -->
+      <section>
+        <?php include("includes/footer.php");?>
+      </section>
     </section><!-- /MAIN CONTENT -->
-    <?php include("includes/footer.php");?>
 </section>
 
     <!-- js placed at the end of the document so the pages load faster -->
