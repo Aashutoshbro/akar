@@ -75,7 +75,7 @@ echo '<script> alert("Your complain has been successfully filled and your compla
     <?php include("includes/sidebar.php");?>
     <section id="main-content">
       <section class="wrapper">
-        <h3><i class="fa fa-angle-right"></i> Register Complaint</h3>
+        <h3><i class="fa fa-angle-right"></i> &nbsp Register Complaint</h3>
         <!-- BASIC FORM ELELEMNTS -->
         <div class="row mt">
           <div class="col-lg-12">
