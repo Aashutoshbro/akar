@@ -42,20 +42,20 @@ else{
     <?php include("includes/header.php");?>
     <?php include("includes/sidebar.php");?>
     <section id="main-content">
-      <section class="wrapper">
-        <h3><i class="fa fa-angle-right"></i> Your Complaint History</h3>
+      <section class="wrapper centered">
+        <h3>Your Complaint History</h3>
 		  	<div class="row mt">
 			  	<div class="col-lg-12">
-            <div class="content-panel">
-              <section id="unseen">
+            <div class="content-panel mb" style="border:3px solid orange;border-radius:10px;">
+              <section id="unseen" style="font-size:14px;margin:30px;">
                 <table class="table table-bordered table-striped table-condensed">
                   <thead>
                     <tr>
-                      <th>Complaint Number</th>
-                      <th>Reg Date</th>
-                      <th>last Updation date</th>
-                      <th >Status</th>
-                      <th>Action</th>
+                      <th class="centered">Complaint Number</th>
+                      <th class="centered">Reg Date</th>
+                      <th class="centered">last Updation date</th>
+                      <th class="centered">Status</th>
+                      <th class="centered">Action</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -94,9 +94,13 @@ else{
           </div><!-- /col-lg-4 -->			
 		  	</div><!-- /row -->
 		  </section><!--/wrapper -->
+
+      <section>
+      <?php include("includes/footer.php");?>
+      </section>
     </section><!-- /MAIN CONTENT -->
 
-    <?php include("includes/footer.php");?>
+
   </section>
 
     <!-- js placed at the end of the document so the pages load faster -->
