@@ -58,12 +58,12 @@ $errormsg="Profile not updated !!";
     <?php include("includes/header.php");?>
     <?php include("includes/sidebar.php");?>
     <section id="main-content">
-      <section class="wrapper">
-        <h3><i class="fa fa-angle-right"></i> Profile info</h3>
+      <section class="wrapper centered">
+        <h3>Profile info</h3>
         <!-- BASIC FORM ELELEMNTS -->
         <div class="row mt">
           <div class="col-lg-12">
-            <div class="form-panel">
+            <div class="form-panel" style="border:3px solid orange;border-radius:10px;">
               <?php if($successmsg)
               {?>
               <div class="alert alert-success alert-dismissable">
@@ -83,9 +83,9 @@ $errormsg="Profile not updated !!";
               {
               ?>                     
 
-              <h4 class="mb"><i class="fa fa-user"></i>&nbsp;&nbsp;<?php echo htmlentities($row['fullName']);?>'s Profile</h4>
-              <h5><b>Last Updated at :</b>&nbsp;&nbsp;<?php echo htmlentities($row['updationDate']);?></h5>
-              <form class="form-horizontal style-form" method="post" name="profile" >
+              <h4 class="mb centered"><i class="fa fa-user"></i>&nbsp;&nbsp;<?php echo htmlentities($row['fullName']);?>'s Profile</h4>
+              <h5 class="mb centered" style="margin-bottom:50px;"><b>Last Updated at :</b>&nbsp;&nbsp;<?php echo htmlentities($row['updationDate']);?></h5>
+              <form class="form-horizontal style-form" method="post" name="profile"  style="font-size:14px;">
 
                 <div class="form-group">
                   <label class="col-sm-2 col-sm-2 control-label">Full Name</label>
@@ -151,9 +151,9 @@ $errormsg="Profile not updated !!";
 
                 <?php } ?>
 
-                <div class="form-group">
-                  <div class="col-sm-10" style="padding-left:25% ">
-                    <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                <div class="form-group centered">
+                  <div class="col-sm-10" style="padding-left:20%">
+                    <button type="submit" name="submit" class="btn btn-primary" style="margin-top:20px;font-weight:bold;font-size:14px;width:160px;height:50px;">Submit</button>
                   </div>
                 </div>
 
