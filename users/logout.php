@@ -1,11 +1,11 @@
 <?php
 session_start();
 
-include("includes/config.php"); //Include the confgn file
+include("includes/config.php"); //Include the config file
 
 $_SESSION['login']=="";  //Empty the session variable that stores the login status
 
-date_default_timezone_set('Asia/Kolkata');  //Set the Default timezone to Asia
+date_default_timezone_set('Asia/Kathmandu');  //Set the Default timezone to Asia Kathmandu
 
 $ldate=date( 'd-m-Y h:i:s A', time () );  //Get the current date and time in the specified format
 
