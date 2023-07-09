@@ -7,7 +7,7 @@ if(strlen($_SESSION['login'])==0)
 header('location:index.php');
 }
 else{
-date_default_timezone_set('Asia/Kolkata');
+date_default_timezone_set('Asia/Kathmandu');
 $currentTime = date( 'd-m-Y h:i:s A', time () );
 
 
