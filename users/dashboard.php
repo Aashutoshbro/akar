@@ -44,18 +44,18 @@ else{ ?>
     <?php include("includes/header.php");?>
     <?php include("includes/sidebar.php");?>
     <section id="main-content">
-      <section class="wrapper">
+      <section class="wrapper mb">
         <div class="row">
-          <div class="col-lg-9 main-chart" style="margin:50px 0 40px 0;">
+          <div class="col-lg-9 main-chart" style="margin:auto">
 
-            <h3 class="centered" style="margin-bottom:30px;">Complaint Status Overview</h3>
+            <div class="centered mb">
+              <h3  style="margin-left:60px;">Complaint Status</h3>
+            </div>
+
+            
 
             <!-- added 2 div to make it looks good while being responsive -->
-            <div class="col-md-2 col-sm-2 box0">
-              <div>
-              </div>
-            </div>
-            <div class="col-md-2 col-sm-2 box0">
+            <div class="col-md-5 col-sm-2 box0">
               <div>
               </div>
             </div>
@@ -103,8 +103,10 @@ else{ ?>
             <?php }?>
         </div><!-- /row mt -->	        	
       </section>
+      <section>
+        <?php include("includes/footer.php");?>
+      </section>
     </section>
-    <?php include("includes/footer.php");?>
   </section>
 
     <!-- js placed at the end of the document so the pages load faster -->

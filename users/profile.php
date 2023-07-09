@@ -152,7 +152,7 @@ $errormsg="Profile not updated !!";
                 <?php } ?>
 
                 <div class="form-group centered">
-                  <div class="col-sm-10" style="padding-left:20%">
+                  <div class="col-sm-10" style="padding-left:18%">
                     <button type="submit" name="submit" class="btn btn-primary" style="margin-top:20px;font-weight:bold;font-size:14px;width:160px;height:50px;">Submit</button>
                   </div>
                 </div>
@@ -162,8 +162,11 @@ $errormsg="Profile not updated !!";
           </div>
         </div>
       </section>
+      <section>
+        <?php include("includes/footer.php");?>
+      </section>
     </section>
-    <?php include("includes/footer.php");?>
+   
   </section>
 
     <!-- js placed at the end of the document so the pages load faster -->
