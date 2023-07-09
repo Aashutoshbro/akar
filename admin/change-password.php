@@ -37,6 +37,7 @@ $_SESSION['msg']="Old Password not match !!";
 	<link type="text/css" href="css/theme.css" rel="stylesheet">
 	<link type="text/css" href="images/icons/css/font-awesome.css" rel="stylesheet">
 	<link type="text/css" href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet'>
+	<link type="text/css" href="css/style.css" rel="stylesheet">
 	<script type="text/javascript">
 function valid()
 {
@@ -79,7 +80,7 @@ return true;
 					<div class="content">
 
 						<div class="module">
-							<div class="module-head">
+							<div class="module-head" >
 								<h3>Admin Change Password</h3>
 							</div>
 							<div class="module-body">
