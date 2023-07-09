@@ -85,7 +85,7 @@ $errormsg="Profile not updated !!";
 
               <h4 class="mb centered"><i class="fa fa-user"></i>&nbsp;&nbsp;<?php echo htmlentities($row['fullName']);?>'s Profile</h4>
               <h5 class="mb centered" style="margin-bottom:50px;"><b>Last Updated at :</b>&nbsp;&nbsp;<?php echo htmlentities($row['updationDate']);?></h5>
-              <form class="form-horizontal style-form" method="post" name="profile"  style="font-size:14px;">
+              <form class="form-horizontal style-form" method="post" name="profile"  style="font-size:14px;margin:30px;">
 
                 <div class="form-group">
                   <label class="col-sm-2 col-sm-2 control-label">Full Name</label>

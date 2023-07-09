@@ -90,7 +90,7 @@ return true;
       <div class="row mt">
         <div class="col-lg-12">
           <div class="form-panel" style="border:3px solid orange;border-radius:10px;">
-            <h4 class="mb" style="margin:40px 0 30px 0;"> &nbspUser Change Password</h4>
+            <h4 class="mb" style="margin:40px 0 30px 30px;"> &nbspUser Change Password</h4>
               <?php if($successmsg)
               {?>
                 <div class="alert alert-success alert-dismissable">
@@ -104,7 +104,7 @@ return true;
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                 <b>Oh snap!</b> </b> <?php echo htmlentities($errormsg);?></div>
                 <?php }?>
-                <form class="form-horizontal style-form" method="post" name="chngpwd" onSubmit="return valid();"  style="font-size:15px;">
+                <form class="form-horizontal style-form" method="post" name="chngpwd" onSubmit="return valid();"  style="font-size:15px;margin:30px;">
                   <div class="form-group">
                     <label class="col-sm-2 col-sm-2 control-label"> &nbsp Current Password</label>
                     <div class="col-sm-10">

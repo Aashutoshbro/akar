@@ -74,8 +74,8 @@ echo '<script> alert("Your complain has been successfully filled and your compla
     <?php include("includes/header.php");?>
     <?php include("includes/sidebar.php");?>
     <section id="main-content">
-      <section class="wrapper">
-        <h3><i class="fa fa-angle-right"></i> &nbsp Register Complaint</h3>
+      <section class="wrapper centered">
+        <h3>Register Complaint</h3>
         <!-- BASIC FORM ELELEMNTS -->
         <div class="row mt">
           <div class="col-lg-12">
@@ -94,7 +94,7 @@ echo '<script> alert("Your complain has been successfully filled and your compla
                 <b>Oh snap!</b> </b> <?php echo htmlentities($errormsg);?>
               </div>
               <?php }?>
-              <form class="form-horizontal style-form" method="post" name="complaint" enctype="multipart/form-data" >
+              <form class="form-horizontal style-form" method="post" name="complaint" enctype="multipart/form-data" style="margin:30px;" >
                 <div class="form-group">
                   <label class="col-sm-2 col-sm-2 control-label">Category</label>
                   <div class="col-sm-4">
@@ -192,11 +192,10 @@ echo '<script> alert("Your complain has been successfully filled and your compla
               
               
       </section>
+      <section>
+        <?php include("includes/footer.php");?>
+      </section>
     </section>
-
-    <!-- This will help to include footer.php from include part -->
-
-    <?php include("includes/footer.php");?>
   
   </section>
 
