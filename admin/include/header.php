@@ -1,3 +1,4 @@
+<!-- This part is for the header part which can be import in all different file -->
 <div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
@@ -6,7 +7,7 @@
 				</a>
 
 			  	<a class="brand" href="index.html">
-			  		CMS | Admin
+			  		AKAR CMS | Admin
 			  	</a>
 
 				<div class="nav-collapse collapse navbar-inverse-collapse">
@@ -26,7 +27,7 @@
 							</ul>
 						</li>
 					</ul>
-				</div><!-- /.nav-collapse -->
+				</div><!-- /.nav-collapse -->	
 			</div>
 		</div><!-- /navbar-inner -->
 	</div><!-- /navbar -->

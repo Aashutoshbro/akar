@@ -1,6 +1,6 @@
 <!-- This will only run when used header.php file in another files -->
 
-<header class="header black-bg"  style="background:#8C52FF;">
+<header class="header black-bg"  style="background:lightgreen;">
     <div class="sidebar-toggle-box" style="color:#fff;">
         <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
     </div>
