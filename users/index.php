@@ -132,7 +132,7 @@ return true;
 		            <input type="password" class="form-control" name="password" required placeholder="Password">
 		            <label class="checkbox">
 		                <span class="pull-right">
-		                    <a data-toggle="modal" href="login.html#myModal"> Forgot Password?</a>
+		                    <a data-toggle="modal" href="#myModal"> Forgot Password?</a>
 		                </span>
 		            </label>
 		            <button class="btn btn-theme btn-block" name="submit" type="submit" style="background-color:#8C52FF"><i class="fa fa-lock"></i> SIGN IN</button>
