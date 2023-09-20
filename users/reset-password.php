@@ -53,25 +53,25 @@ $extra="login.php";
 if(isset($_POST['change']))
 {
    $email=$_POST['email'];
-    $contact=$_POST['contact'];
     $password=md5($_POST['password']);
 
 	//Check if the email and contact number are valid in the database
-$query=mysqli_query($bd, "SELECT * FROM users WHERE userEmail='$email' and contactNo='$contact'");
+$query=mysqli_query($bd, "SELECT * FROM users WHERE userEmail='$email'");
 $num=mysqli_fetch_array($query);
 
 
 if($num>0)
 {
 	//If the email and contact number are valid, update the user's password
-mysqli_query($bd, "update users set password='$password' WHERE userEmail='$email' and contactNo='$contact' ");
+mysqli_query($bd, "update users set password='$password' WHERE userEmail='$email'");
 $msg="Password Changed Successfully";
+;
 
 }
 else
 {
 	//If the email and contact number are not valid, display an error message
-$errormsg="Invalid email id or Contact no";
+$errormsg="Invalid email id";
 }
 }
 ?>
@@ -94,6 +94,7 @@ $errormsg="Invalid email id or Contact no";
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
+
 <script type="text/javascript">
 function valid()
 {
@@ -117,7 +118,7 @@ return true;
 	<div id="login-page">
 		<div class="container">
 	  		<form class="form-login" name="login" method="post">
-		    	<h2 class="form-login-heading" style="background-color:#8C52FF" >sign in now</h2>
+		    	<h2 class="form-login-heading" style="background-color:#8C52FF" >Change Your Password</h2>
 		        <p style="padding-left:4%; padding-top:2%;  color:red">
 		        <?php if($errormsg){
 				echo htmlentities($errormsg);
@@ -126,51 +127,25 @@ return true;
 		        <?php if($msg){
 				echo htmlentities($msg);
 		        }?></p>
-		        <div class="login-wrap">
-		        	<input type="text" class="form-control" name="username" placeholder="Email"  required autofocus>
-		            <br>
-		            <input type="password" class="form-control" name="password" required placeholder="Password">
-		            <label class="checkbox">
-		                <span class="pull-right">
-		                    <a data-toggle="modal" href="./forgot-password.php"> Forgot Password?</a>
-		                </span>
-		            </label>
-		            <button class="btn btn-theme btn-block" name="submit" type="submit" style="background-color:#8C52FF"><i class="fa fa-lock"></i> SIGN IN</button>
-		            <hr>
-		    		</form>
-		            <div class="registration">
-		                Don't have an account yet?<br/>
-		                <a class="" href="registration.php">
-		                    Create an account
-		                </a>
-		            </div>
-		
-		        </div>
-		
-		          <!-- Modal -->
-		        <form class="form-login" name="forgot" method="post">
-		        	<div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
-		            	<div class="modal-dialog">
-		                	<div class="modal-content">
-		                    	<div class="modal-header">
-		                        	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		                          	<h4 class="modal-title">Forgot Password ?</h4>
-		                      	</div>
+
+
 								<div class="modal-body">
-									<p>Enter your details below to reset your password.</p>
-										<input type="email" name="email" placeholder="Email" autocomplete="off" class="form-control" required><br >
-										<input type="text" name="contact" placeholder="contact No" autocomplete="off" class="form-control" required><br>
-										<input type="password" class="form-control" placeholder="New Password" id="password" name="password"  required ><br />
-										<input type="password" class="form-control unicase-form-control text-input" placeholder="Confirm Password" id="confirmpassword" name="confirmpassword" required >
-								</div>
+									<p>Enter your new password</p>
+                                        <input type="email" name="email" placeholder="Email" autocomplete="off" class="form-control" required><br>
+                                        <input type="password" class="form-control pwd" placeholder="New Password" id="password" name="password"  required ><br />
+                                        <input type="password" class="form-control unicase-form-control text-input pwd" placeholder="Confirm Password" id="confirmpassword" name="confirmpassword" required >
+                                        <br>
+                                        
+                                
+                                </div>
 								<div class="modal-footer">
-									<button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
+                                    <button class="btn btn-default reveal col-ml-2" type="button"><i class="glyphicon glyphicon-eye-open"></i></button>
+								    <button data-dismiss="modal" class="btn btn-default col-md-3" type="button">Cancel</button>
 									<button class="btn btn-theme" type="submit" name="change" onclick="return valid();">Submit</button>
 								</div>
-		                  	</div>
-		             	</div>
-		          	</div>
-		          <!-- modal -->
+		
+		        </div>
+
 		        </form>
 		</div>
 	</div>
@@ -184,6 +159,16 @@ return true;
     <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
     <script>
        $.backstretch("assets/img/road-bg.png", {speed: 500});
+
+
+       $(".reveal").on('click',function() {
+    var $pwd = $(".pwd");
+    if ($pwd.attr('type') === 'password') {
+        $pwd.attr('type', 'text');
+    } else {
+        $pwd.attr('type', 'password');
+    }
+});
     </script>
 
 
