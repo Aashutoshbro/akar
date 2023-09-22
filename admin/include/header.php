@@ -6,7 +6,7 @@
 					<i class="icon-reorder shaded"></i>
 				</a>
 
-			  	<a class="brand" href="index.html">
+			  	<a class="brand" href="http://localhost/akar/">
 			  		AKAR CMS | Admin
 			  	</a>
 
