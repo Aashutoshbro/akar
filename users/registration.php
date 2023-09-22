@@ -43,6 +43,34 @@ if(isset($_POST['submit']))
 </head>
 
 <body>
+
+<!--******************************************** Top Navbar ***************************************** -->
+<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner bg">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+					<i class="icon-reorder shaded"></i>
+				</a>
+                <ul>
+			  	<li><a class="brand" href="http://localhost/akar/"  style="color:white;font-size:20px;">
+			  		AKAR CMS | USER
+			  	</a></li></ul>
+
+				<div class="nav-collapse collapse navbar-inverse-collapse">
+				
+					<ul class="nav pull-right">
+
+						<li><a href="http://localhost/akar/" style="color:white;background:#8C52FF;border-radius:6px;margin-top:-40px;">
+						Back to Portal
+						</a></li>	
+
+					</ul>
+				</div><!-- /.nav-collapse -->
+			</div>
+		</div><!-- /navbar-inner -->
+	</div>
+    <!-- ***************************************** navbar ********************************************-->
+
 	<div id="login-page">
 	  	<div class="container">
 	  	

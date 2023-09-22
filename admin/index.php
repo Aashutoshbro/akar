@@ -174,10 +174,10 @@ exit();
         <form method="post">
         <span style="color:red;" ><?php echo htmlentities($_SESSION['errmsg']); ?><?php echo htmlentities($_SESSION['errmsg']="");?></span>
             <div class="user-box">
-                <input class="span12" type="text" id="inputEmail" name="username" placeholder="Username" required="" >
+                <input class="span12" type="text" id="inputEmail" name="username" placeholder=" Username" required="" >
             </div>
             <div class="user-box">
-                <input class="span12" type="password" id="inputPassword" name="password" placeholder="Password" required="" >
+                <input class="span12" type="password" id="inputPassword" name="password" placeholder=" Password" required="" >
             </div>
             <div class="controls clearfix">
                 <button type="submit" class="btn btn-primary pull-right" name="submit">Login</button>
