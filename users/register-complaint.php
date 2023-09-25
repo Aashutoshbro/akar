@@ -113,6 +113,13 @@ echo '<script> alert("Your complain has been successfully filled and your compla
                   <div class="col-sm-4">
                     <select name="subcategory" id="subcategory" class="form-control" >
                       <option value="">Select Subcategory</option>
+                      <?php $sql=mysqli_query($bd, "select id,subcategory from subcategory ");
+                      while ($rw=mysqli_fetch_array($sql)) {
+                      ?>
+                      <option value="<?php echo htmlentities($rw['id']);?>"><?php echo htmlentities($rw['subcategory']);?></option>
+                      <?php
+                      }
+                      ?>
                     </select>
                   </div>
                 </div>
