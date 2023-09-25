@@ -121,7 +121,7 @@ echo '<script> alert("Your complain has been successfully filled and your compla
                   <label class="col-sm-2 col-sm-2 control-label">Complaint Type</label>
                   <div class="col-sm-4">
                     <select name="complaintype" class="form-control" required="">
-                      <option value=" Complaint"> Complaint</option>
+                      <option value=" Complaint">Road Complaint</option>
                       <option value="General Query">General Query</option>
                     </select> 
                   </div>

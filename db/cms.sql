@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 06, 2023 at 05:58 AM
+-- Generation Time: Sep 25, 2023 at 06:28 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -60,8 +60,11 @@ CREATE TABLE `category` (
 --
 
 INSERT INTO `category` (`id`, `categoryName`, `categoryDescription`, `creationDate`, `updationDate`) VALUES
-(1, 'Road', 'This is a category for complaint related to road maintenance', '2023-06-18 13:16:17', ''),
-(2, 'Pole ko batti', 'this is category for pole ko batti', '2023-06-18 16:14:44', '');
+(4, 'Pot Holes', 'Potholes are areas of road surface that have cracked, worn away, and eventually formed a hole.', '2023-09-25 16:15:22', ''),
+(5, 'Road Cracks', 'Road cracks are caused by either repeated loading from traffic, or via temperature (climate) induced cracking.', '2023-09-25 16:15:58', ''),
+(6, 'Blocked Drainage', 'Blocked drains are a result of residue build-up from either food or substance particles over time.', '2023-09-25 16:17:42', ''),
+(7, 'Street Light', 'A street light or street lamp is a raised source of light often mounted on a pole', '2023-09-25 16:18:58', ''),
+(8, 'Malfunctioning Traffic Signal', 'If the light is flashing, you should come to a complete stop, check traffic from all other directions.', '2023-09-25 16:20:12', '');
 
 -- --------------------------------------------------------
 
@@ -106,9 +109,13 @@ CREATE TABLE `state` (
 --
 
 INSERT INTO `state` (`id`, `stateName`, `stateDescription`, `postingDate`, `updationDate`) VALUES
-(1, 'Bagmati', 'demo state', '2023-06-18 13:16:37', ''),
-(2, 'lumbini', 'demo state 2\r\n', '2023-06-18 16:15:11', ''),
-(3, 'lumbini', 'demo state 2\r\n', '2023-06-18 16:16:19', '');
+(4, 'Province 1', '14 districts', '2023-09-25 15:38:12', ''),
+(5, 'Province 2', '8 districts', '2023-09-25 15:38:39', ''),
+(6, 'Province 3', '13 districts', '2023-09-25 15:39:08', ''),
+(7, 'Province 4', '11 districts', '2023-09-25 15:40:14', ''),
+(9, 'Province 5', '12 districts', '2023-09-25 15:41:38', ''),
+(10, 'Province 6', '10 districts', '2023-09-25 15:43:11', ''),
+(11, 'Province 7', '9 districts', '2023-09-25 15:43:39', '');
 
 -- --------------------------------------------------------
 
@@ -123,6 +130,23 @@ CREATE TABLE `subcategory` (
   `creationDate` timestamp NOT NULL DEFAULT current_timestamp(),
   `updationDate` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `subcategory`
+--
+
+INSERT INTO `subcategory` (`id`, `categoryid`, `subcategory`, `creationDate`, `updationDate`) VALUES
+(1, 4, 'Deep Holes', '2023-09-25 16:21:16', ''),
+(2, 4, 'Multiples Holes', '2023-09-25 16:21:29', ''),
+(3, 5, 'Longitudinal Crack', '2023-09-25 16:22:24', ''),
+(4, 5, 'Transverse Crack', '2023-09-25 16:22:43', ''),
+(5, 6, 'Flood During Rain', '2023-09-25 16:24:44', ''),
+(6, 6, 'Water Accumulation(paani jameko)', '2023-09-25 16:25:18', ''),
+(7, 7, 'Malfunctioning', '2023-09-25 16:25:46', ''),
+(8, 7, 'Switch Problem', '2023-09-25 16:26:04', ''),
+(9, 7, 'Bulb Problem', '2023-09-25 16:26:23', ''),
+(10, 8, 'Non Functioning Lights', '2023-09-25 16:27:00', ''),
+(11, 8, 'Inconsistent Behaviour', '2023-09-25 16:28:03', '');
 
 -- --------------------------------------------------------
 
@@ -206,7 +230,46 @@ INSERT INTO `userlog` (`id`, `uid`, `username`, `userip`, `loginTime`, `logout`,
 (29, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-06-28 06:20:12', '', 1),
 (30, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-06-28 06:44:38', '', 1),
 (31, 0, 'admin', 0x3a3a3100000000000000000000000000, '2023-07-02 02:35:14', '', 0),
-(32, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-02 02:35:22', '', 1);
+(32, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-02 02:35:22', '', 1),
+(33, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-06 04:08:13', '06-07-2023 09:41:58 AM', 1),
+(34, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-07 02:33:12', '', 1),
+(35, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-07 02:34:32', '', 1),
+(36, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-09 06:52:46', '09-07-2023 12:24:25 PM', 1),
+(37, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-09 07:14:26', '09-07-2023 07:06:57 PM', 1),
+(38, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-09 13:37:04', '', 1),
+(39, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-09 13:41:40', '', 1),
+(40, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-09 14:58:25', '09-07-2023 10:25:15 PM', 1),
+(41, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-09 16:40:19', '09-07-2023 10:25:30 PM', 1),
+(42, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-09 16:40:40', '09-07-2023 10:25:42 PM', 1),
+(43, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-09 16:40:53', '09-07-2023 10:25:54 PM', 1),
+(44, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-09 16:43:59', '', 1),
+(45, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-09 16:45:31', '', 1),
+(46, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-09 16:46:45', '', 1),
+(47, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-09 16:47:59', '09-07-2023 10:34:36 PM', 1),
+(48, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-09 16:49:40', '09-07-2023 10:38:12 PM', 1),
+(49, 0, '9843966770', 0x3a3a3100000000000000000000000000, '2023-07-09 16:57:03', '', 0),
+(50, 0, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-09 16:57:07', '', 0),
+(51, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-09 16:57:15', '', 1),
+(52, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-11 13:35:58', '11-07-2023 07:21:47 PM', 1),
+(53, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-11 14:46:54', '11-07-2023 08:31:58 PM', 1),
+(54, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-11 14:47:02', '11-07-2023 08:32:26 PM', 1),
+(55, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-11 14:49:20', '11-07-2023 08:34:58 PM', 1),
+(56, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-11 14:55:09', '11-07-2023 08:40:43 PM', 1),
+(57, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-11 14:58:02', '11-07-2023 08:43:35 PM', 1),
+(58, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-07-13 12:52:48', '19-09-2023 04:42:10 PM', 1),
+(59, 0, 'Aashu', 0x3a3a3100000000000000000000000000, '2023-09-19 10:57:22', '', 0),
+(60, 0, 'aashu', 0x3a3a3100000000000000000000000000, '2023-09-19 10:57:42', '', 0),
+(61, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-09-19 10:57:47', '', 1),
+(62, 0, 'aashu', 0x3a3a3100000000000000000000000000, '2023-09-19 11:04:21', '', 0),
+(63, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-09-19 11:04:25', '19-09-2023 04:51:01 PM', 1),
+(64, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-09-19 11:14:31', '19-09-2023 10:14:50 PM', 1),
+(65, 0, 'hari@gmail.com', 0x3a3a3100000000000000000000000000, '2023-09-20 19:01:34', '', 0),
+(66, 4, 'hari@gmail.com', 0x3a3a3100000000000000000000000000, '2023-09-20 19:01:44', '21-09-2023 12:54:00 AM', 1),
+(67, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-09-20 20:53:52', '21-09-2023 02:39:18 AM', 1),
+(68, 2, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-09-20 21:06:03', '25-09-2023 06:28:04 PM', 1),
+(69, 0, 'aashutoshbro1@gmail.com', 0x3a3a3100000000000000000000000000, '2023-09-25 12:48:31', '', 0),
+(70, 0, 'Aashu', 0x3a3a3100000000000000000000000000, '2023-09-25 12:48:37', '', 0),
+(71, 4, 'hari@gmail.com', 0x3a3a3100000000000000000000000000, '2023-09-25 12:48:44', '', 1);
 
 -- --------------------------------------------------------
 
@@ -226,18 +289,29 @@ CREATE TABLE `users` (
   `pincode` int(6) DEFAULT NULL,
   `userImage` varchar(255) DEFAULT NULL,
   `regDate` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updationDate` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE current_timestamp(),
-  `status` int(1) NOT NULL
+  `updationDate` timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `status` int(1) NOT NULL,
+  `reset_token_hash` varchar(64) DEFAULT NULL,
+  `reset_token_expires_at` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `fullName`, `userEmail`, `password`, `contactNo`, `address`, `State`, `country`, `pincode`, `userImage`, `regDate`, `updationDate`, `status`) VALUES
-(1, 'John Smith', 'john@gmail.com', '202cb962ac59075b964b07152d234b70', 9999999999, NULL, NULL, NULL, NULL, NULL, '2020-05-08 14:10:50', '2020-05-08 14:16:22', 1),
-(2, 'Aashutosh Sapkota', 'aashutoshbro1@gmail.com', 'da998cc422a0dccd0009bd332fa99e13', 9843966770, NULL, NULL, NULL, NULL, NULL, '2023-05-18 15:55:06', '0000-00-00 00:00:00', 1),
-(3, 'rajeev', 'rajjev@gmail.com', '5d41402abc4b2a76b9719d911017c592', 9840000000, NULL, NULL, NULL, NULL, NULL, '2023-05-18 16:03:38', '0000-00-00 00:00:00', 1);
+INSERT INTO `users` (`id`, `fullName`, `userEmail`, `password`, `contactNo`, `address`, `State`, `country`, `pincode`, `userImage`, `regDate`, `updationDate`, `status`, `reset_token_hash`, `reset_token_expires_at`) VALUES
+(1, 'John Smith', 'john@gmail.com', '202cb962ac59075b964b07152d234b70', 9999999999, NULL, NULL, NULL, NULL, NULL, '2020-05-08 14:10:50', '2023-09-20 19:46:20', 1, '83c5e8e825f7d5bf9d05fb6bc531b67348ce5ec78749ba1df574d1a508448545', '2023-09-20 22:16:20'),
+(2, 'User Name', 'aashutoshbro1@gmail.com', 'da998cc422a0dccd0009bd332fa99e13', 9843966770, 'Bharatpur', 'Bagmati', 'Nepal', 44200, NULL, '2023-05-18 15:55:06', '2023-09-25 08:31:17', 1, '9f4016b435700581f4461ed5215c9135ca70410efeb0e2d42ac6451c38c0ed55', '2023-09-25 11:01:17'),
+(3, 'rajeev', 'rajjev@gmail.com', '5d41402abc4b2a76b9719d911017c592', 9840000000, NULL, NULL, NULL, NULL, NULL, '2023-05-18 16:03:38', '0000-00-00 00:00:00', 1, NULL, NULL),
+(4, 'hari', 'hari@gmail.com', '0769e56eb5d72039f01530d705e971da', 0, NULL, NULL, NULL, NULL, NULL, '2023-09-20 19:01:19', NULL, 1, NULL, NULL),
+(5, 'james', 'jame@gmail.com', 'b9366f63dca441a309412bfd20517f11', 0, NULL, NULL, NULL, NULL, NULL, '2023-09-20 19:09:31', NULL, 1, NULL, NULL),
+(6, 'james', 'jame@gmail.com', 'b9366f63dca441a309412bfd20517f11', 0, NULL, NULL, NULL, NULL, NULL, '2023-09-20 19:10:55', NULL, 1, NULL, NULL),
+(7, 'james', 'jame@gmail.com', 'b9366f63dca441a309412bfd20517f11', 0, NULL, NULL, NULL, NULL, NULL, '2023-09-20 19:11:56', NULL, 1, NULL, NULL),
+(8, 'james', 'jame@gmail.com', 'b9366f63dca441a309412bfd20517f11', 0, NULL, NULL, NULL, NULL, NULL, '2023-09-20 19:12:02', NULL, 1, NULL, NULL),
+(9, 'james', 'jame@gmail.com', 'b9366f63dca441a309412bfd20517f11', 0, NULL, NULL, NULL, NULL, NULL, '2023-09-20 19:12:05', NULL, 1, NULL, NULL),
+(10, 'james', 'jame@gmail.com', 'b9366f63dca441a309412bfd20517f11', 0, NULL, NULL, NULL, NULL, NULL, '2023-09-20 19:12:06', NULL, 1, NULL, NULL),
+(11, 'james', 'jame@gmail.com', 'b9366f63dca441a309412bfd20517f11', 0, NULL, NULL, NULL, NULL, NULL, '2023-09-20 19:13:08', NULL, 1, NULL, NULL),
+(12, 'james', 'jame@gmail.com', 'b9366f63dca441a309412bfd20517f11', 0, NULL, NULL, NULL, NULL, NULL, '2023-09-20 19:13:11', NULL, 1, NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -289,7 +363,8 @@ ALTER TABLE `userlog`
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `reset_token_hash` (`reset_token_hash`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -305,7 +380,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `category`
 --
 ALTER TABLE `category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `complaintremark`
@@ -317,13 +392,13 @@ ALTER TABLE `complaintremark`
 -- AUTO_INCREMENT for table `state`
 --
 ALTER TABLE `state`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `subcategory`
 --
 ALTER TABLE `subcategory`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `tblcomplaints`
@@ -335,13 +410,13 @@ ALTER TABLE `tblcomplaints`
 -- AUTO_INCREMENT for table `userlog`
 --
 ALTER TABLE `userlog`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
