@@ -10,7 +10,9 @@ if(isset($_POST['submit']))
 {
 
 	//Retrieve the user details from the database based on the entered email and password
-$ret=mysqli_query($bd, "SELECT * FROM users WHERE userEmail='".$_POST['username']."' and password='".md5($_POST['password'])."'");
+
+	
+$ret=mysqli_query($bd, "SELECT * FROM users WHERE userEmail='". mysqli_real_escape_string($bd, $_POST['username'])."' and password='".md5($_POST['password'])."'");
 $num=mysqli_fetch_array($ret);
 
 
