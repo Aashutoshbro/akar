@@ -20,7 +20,7 @@ if($num>0)
 {
 
 	//If the user is found on the database, set session variables and log the user in
-$extra="change-password.php";//
+$extra="register-complaint.php";//
 $_SESSION['login']=$_POST['username'];
 $_SESSION['id']=$num['id'];
 $host=$_SERVER['HTTP_HOST'];
