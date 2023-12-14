@@ -1,0 +1,258 @@
+[33mcommit 7689dfe74149a71317af2aeba45ea8124684709c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Mon Sep 25 22:15:36 2023 +0545
+
+    added category and sub category and updated cms.sql
+
+[33mcommit 59492fff658f0953ac4ce89806f062521256a448[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Fri Sep 22 14:08:51 2023 +0545
+
+    added navbar in user login parts
+
+[33mcommit d041804e034d8836da40d2979220431ada933a6f[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Fri Sep 22 12:45:04 2023 +0545
+
+    link for admin changed
+
+[33mcommit 315c56e633c2974dfdb14cc018372603761c1d6a[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Fri Sep 22 12:42:11 2023 +0545
+
+    customize admin page and authenticated session
+
+[33mcommit 9768f74b60e7b049f0b32090988ce479c87c3172[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Thu Sep 21 05:00:16 2023 +0545
+
+    Password reset system completed using phpmailer
+
+[33mcommit e3670b2aa3c793d86f09af1a7a955e0a54001d0b[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Tue Sep 19 16:56:59 2023 +0545
+
+    last change
+
+[33mcommit 892908ad523673e010687594d2bda667ba3de9f2[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Mon Jul 10 00:25:57 2023 +0545
+
+    remove unneccessary files this much for today
+
+[33mcommit e459fccddefb0e0f20a710a016c755da3430f80e[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Mon Jul 10 00:24:06 2023 +0545
+
+    done some color change in sidebar
+
+[33mcommit 92a8168660892e8504ce71ebfda405ac8da3dba5[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Mon Jul 10 00:17:59 2023 +0545
+
+    added borders and aligned some items
+
+[33mcommit 245c6135f2d8f91347a5b93bd5690e596963041c[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Mon Jul 10 00:09:45 2023 +0545
+
+    register complaint part finished designed still the addition of fields are remaining
+
+[33mcommit ce529f7536e1645971a04ded2cb51fd5dee2c67d[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Mon Jul 10 00:03:08 2023 +0545
+
+    added margin for the form
+
+[33mcommit 90840e3ef52bce10466437806e03a3cd7cbfcca4[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Sun Jul 9 23:53:47 2023 +0545
+
+    done some changes in dashboard
+
+[33mcommit 8f239c9f7b7aef15e146bcfa636d3313a3f571fe[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Sun Jul 9 23:38:23 2023 +0545
+
+    completed changepassword.php part of frontend and added some php
+
+[33mcommit 10a9ec0b1f7981a76aad4fa7ab1e41f480225263[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Sun Jul 9 23:14:14 2023 +0545
+
+    completed profile part of frontend and added some php
+
+[33mcommit a949ba710e5004e3b040f7e54b49cde070599f6b[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Sun Jul 9 22:46:34 2023 +0545
+
+    added time zone Asia/Kathmandu
+
+[33mcommit 8c87920c9afedccaa46201f01854255fcda3b69c[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Sun Jul 9 22:32:32 2023 +0545
+
+    added local host path to akar
+
+[33mcommit 60e9e8b3551cde9059c74c01e7a6d2c7e5d8ab12[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Sun Jul 9 22:23:17 2023 +0545
+
+    dashboard final touchup
+
+[33mcommit 57d6ec7b61e97870ff05f77dd2d1945237f5f964[m
+Merge: 8e937a3 8214d3b
+Author: Aashutosh Sapkota <55585284+Aashutoshbro@users.noreply.github.com>
+Date:   Sun Jul 9 22:20:43 2023 +0545
+
+    Merge pull request #12 from rajeevpaudel1/main
+    
+    Index Successfully Added !
+
+[33mcommit 8214d3b65c539c87071a9d42b8f08e99701b2774[m
+Author: Rajeev Paudel <rajeev11paudel@gmail.com>
+Date:   Sun Jul 9 22:07:32 2023 +0545
+
+    Index Successfully Added !
+
+[33mcommit 8e937a3236e56567cabe07341aed0910a05e8e24[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Sun Jul 9 21:25:44 2023 +0545
+
+    doing styling in dashboard
+
+[33mcommit c61b802d09e67b088edf9def3c02aa2dde8ada39[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Sun Jul 9 20:57:47 2023 +0545
+
+    timezone managed and aligned it to database for logOut process
+
+[33mcommit 625887eb3e5136a7b019e579bcba32ac263a8297[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Sun Jul 9 20:52:49 2023 +0545
+
+    backend connected to registration.php
+
+[33mcommit 3e186b1a0de932123ee06bdc23aef72f54a78484[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Sun Jul 9 20:32:58 2023 +0545
+
+    finished styling and adding extra php entities in includes/footer-header-sidebar
+
+[33mcommit dcc889798568f00edc677c37baefb239c1f12aed[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Sun Jul 9 20:13:59 2023 +0545
+
+    finally completed sidebar.php linked files to other part and styled the lists
+
+[33mcommit f857b7632768d0e0a486dc2f58832d4913eae4bd[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Sun Jul 9 19:42:55 2023 +0545
+
+    completed includes/header.php properly aligned nav icon and button and added php
+
+[33mcommit 8846ce77286a1b693e732e82ddb2c66a843f0ca2[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Sun Jul 9 19:26:00 2023 +0545
+
+    navbar styling
+
+[33mcommit 31d16b336bcea0f0dd4b76628db70cdba8f4fefd[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Sun Jul 9 13:30:54 2023 +0545
+
+    complaint register(Working on extra field to receive data) in  register-complaint.php
+
+[33mcommit a5b1ca09ab2f12148793f4a4b7bc275af573e8dc[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Sun Jul 9 13:07:58 2023 +0545
+
+    registration.php file chnages some css and php part
+
+[33mcommit 58103e252eeedbc3beb4c9b9593499b28efe209a[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Sun Jul 9 12:50:28 2023 +0545
+
+    changes done in user includes
+
+[33mcommit 1cd82e4d8481b0aef3fadf9e23b7cd5d80a0b9c6[m
+Merge: b05ae23 4e0ed26
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Thu Jun 29 22:48:06 2023 +0545
+
+    Merge branch 'main' of https://github.com/Aashutoshbro/akar
+
+[33mcommit b05ae2369b7ac55ee7599a4e455e879e645d8578[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Thu Jun 29 22:47:42 2023 +0545
+
+    centered div
+
+[33mcommit 4e0ed2671977d37020449a4e34defd3b0c70066b[m
+Merge: bcaff4c 0b00c9d
+Author: Aashutosh Sapkota <55585284+Aashutoshbro@users.noreply.github.com>
+Date:   Thu Jun 29 11:09:32 2023 +0545
+
+    Merge pull request #11 from PHom798/main
+    
+    Index.php colors and some imp. Comments are mentioned
+
+[33mcommit 0b00c9d7a4b4169875c2ae56c62d49b8e18822c7[m
+Author: Hom bdr. pathak <pathakhom17@gmail.com>
+Date:   Wed Jun 28 15:22:05 2023 +0545
+
+    Index.php colors and some imp. Comments are mentioned
+
+[33mcommit bcaff4c7fa777e38432c67ef2bde913bc61d4378[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Wed Jun 28 13:18:48 2023 +0545
+
+    added .php files for admin section
+
+[33mcommit bba6afd57ecc9fc0ab0306d71d3d336bb0ae65e2[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Wed Jun 28 12:52:15 2023 +0545
+
+    removed some meta tags and written some clean code
+
+[33mcommit 8e188b6dbac85c9568c386829defb44022416fba[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Wed Jun 28 11:16:39 2023 +0545
+
+    added some css files
+
+[33mcommit 647340fde90f4adcfc3e5c1fa084c853d7103cb1[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Wed Jun 28 10:53:11 2023 +0545
+
+    cleaned some code files
+
+[33mcommit 1e15c08936518b0e7b344a72bc6dc619007b0d24[m
+Author: Aashubro <aashutoshbro1@gmail.com>
+Date:   Wed Jun 28 09:35:55 2023 +0545
+
+    done some changes in some files
+
+[33mcommit 69b6d9a2b712cf8a850b0934b7226e11d9b615ec[m
+Merge: 5f13833 2acdc8e
+Author: Aashutosh Sapkota <55585284+Aashutoshbro@users.noreply.github.com>
+Date:   Sun Jun 25 16:24:12 2023 +0545
+
+    Merge pull request #9 from AbhishekSharmaPoudel/main
+    
+    changed some styling in buttons
+
+[33mcommit 2acdc8e65640b144af562cf46855ebe7e961bf89[m
+Author: Abhishek Sharma <poudelabhishek205@gmail.com>
+Date:   Sat Jun 24 18:25:05 2023 +0545
+
+    .btn primary 2812
+
+[33mcommit 5f1383336dbcaa79b8e7ded202f035b3b7856d2f[m
+Merge: 2f273fa c0e7edd
+Author: Aashutosh Sapkota <55585284+Aashutoshbro@users.noreply.github.com>
+Date:   Sat Jun 24 16:56:30 2023 +0545
+
+    Merge pull request #8 from rajeevpaudel1/main
+    
+    User file
